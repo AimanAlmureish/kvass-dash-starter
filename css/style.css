@@ -15,19 +15,19 @@ header {
 
 .container {
     width: 100%;
-    /* padding: 3em; */
     background: #f5f5f58f;
 }
 
 .content {
     padding: 3em;
+    margin-left: 300px;
 }
 
 .sidebar {
     width: 300px;
     height: 100%;
     background: rgb(22, 22, 22);
-    position: relative;
+    position: fixed;
     top: 0;
     bottom: 0;
     padding-bottom: 2em;
@@ -83,6 +83,138 @@ section {
     margin-bottom: 2em;
 }
 
-section h1 {
+section div {
+    margin-bottom: 2em;
+}
+
+section h1,
+h2,
+h3,
+h4 {
     color: rgb(126, 126, 126);
+    /* padding: 1em 0em; */
+    padding-bottom: 1em;
+}
+
+.headings>* {
+    padding-bottom: 1em;
+}
+
+.buttons {
+    padding: 1em 1em;
+}
+
+.buttonDanger {
+    background-color: rgb(250, 70, 70);
+    padding: 0.7em 1em;
+    border-radius: 5px;
+    border-style: none;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.buttonWarn {
+    background-color: rgb(182, 169, 50);
+    padding: 0.7em 1em;
+    border-radius: 5px;
+    border-style: none;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.buttonSubmit {
+    background-color: rgb(98, 100, 241);
+    padding: 0.7em 1em;
+    border-radius: 5px;
+    border-style: none;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.buttonDisable {
+    background-color: rgb(134, 134, 134);
+    padding: 0.7em 1em;
+    border-radius: 5px;
+    border-style: none;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+
+/* Glass Buttons*/
+
+.buttonsGlass {
+    background: #fbd3e9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient( to right, #bb377d, #fbd3e9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient( to right, #bb377d, #fbd3e9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 1em 1em;
+    border-radius: 5px;
+}
+
+.buttonsGlass>* {
+    margin-right: 0.3em;
+}
+
+.buttonDangerGlass {
+    background: rgb(250, 70, 70, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    padding: 0.7em 1em;
+    border-radius: 5px;
+    border-style: none;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.buttonWarnGlass {
+    background: rgb(182, 169, 50, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    padding: 0.7em 1em;
+    border-radius: 5px;
+    border-style: none;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.buttonSubmitGlass {
+    background: rgb(98, 100, 241, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    padding: 0.7em 1em;
+    border-radius: 5px;
+    border-style: none;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.buttonDisableGlass {
+    background: rgb(134, 134, 134, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    padding: 0.7em 1em;
+    border-radius: 5px;
+    border-style: none;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }

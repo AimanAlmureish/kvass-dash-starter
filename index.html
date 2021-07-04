@@ -15,26 +15,65 @@
 
 <body>
     <div class="wholeHeader flex flexAlignStretch flexBetween">
-        <div class="sidebar flex flexStart flexBetween flexColumn">
+        <div class="sidebar clearfix flex flexStart flexBetween flexColumn">
             <div class="logo flex flexCenter">
                 <!-- <img width="100" src="./images/logo.png" alt="" /> -->
                 <h1>KVASS</h1>
             </div>
             <ul>
-                <a href="index.php">
-                    <li>Section name</li>
+                <a href="#headings">
+                    <li>Headings</li>
                 </a>
-                <a href="index.php">
-                    <li>Section name</li>
+                <a href="#buttons">
+                    <li>Buttons</li>
+                </a>
+                <a href="#cards">
+                    <li>Cards</li>
+                </a>
+                <a href="#longCards">
+                    <li>Full width cards</li>
+                </a>
+                <a href="#tables">
+                    <li>Tables</li>
                 </a>
             </ul>
         </div>
 
-        <div class="container">
+        <div class="container clearfix">
             <header></header>
             <div class="content">
-                <section id="">
-                    <h1>Section Title</h1>
+                <section id="headings">
+                    <h1>Headings</h1>
+                    <div class="headings">
+                        <h1>This is heading</h1>
+                        <h2>This is heading</h2>
+                        <h3>This is heading</h3>
+                        <h4>This is heading</h4>
+                    </div>
+                </section>
+                <section id="buttons">
+                    <h1>Buttons</h1>
+                    <div class="buttons">
+                        <button class="buttonDanger">Click me</button>
+                        <button class="buttonWarn">Click me</button>
+                        <button class="buttonSubmit">Click me</button>
+                        <button class="buttonDisable">Click me</button>
+                    </div>
+                    <div class="buttonsGlass flex flexAlignCenter">
+                        <button class="buttonDangerGlass">Click me</button>
+                        <button class="buttonWarnGlass">Click me</button>
+                        <button class="buttonSubmitGlass">Click me</button>
+                        <button class="buttonDisableGlass">Click me</button>
+                    </div>
+                </section>
+                <section id="cards">
+                    <h1>Cards</h1>
+                </section>
+                <section id="longCards">
+                    <h1>Long Cards</h1>
+                </section>
+                <section id="tables">
+                    <h1>Tables</h1>
                 </section>
             </div>
         </div>
