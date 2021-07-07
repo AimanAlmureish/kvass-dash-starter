@@ -122,7 +122,7 @@ header {
 
 section {
     background-color: #fff;
-    padding: 1em;
+    padding: 2em;
     box-shadow: 0 0 3px 0 rgb(202, 202, 202);
     border-radius: 5px;
     margin-bottom: 2em;
@@ -132,7 +132,7 @@ section div {
     margin-bottom: 2em;
 }
 
-section h1,
+section>h1:first-of-type,
 h2,
 h3,
 h4 {
@@ -262,4 +262,30 @@ button:hover {
     color: #fff;
     font-weight: bold;
     transition: all 0.3s ease;
+}
+
+
+/* Cards */
+
+.wholeCards {
+    width: 100%;
+}
+
+.singleCard {
+    background-color: #202020;
+    flex: 0 0 29.3%;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    padding: 2em 3em;
+}
+
+.singleCard h1 {
+    color: #fff;
+}
+
+.singleCard p {
+    color: #ffdf6c;
+    font-weight: bold;
+    font-size: 2em;
 }
