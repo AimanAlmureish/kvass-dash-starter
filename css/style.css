@@ -1,3 +1,8 @@
+/* #3F3F3F dark grey
+#707070 med gray
+#202020 blackish
+*/
+
 .wholeHeader {
     width: 100%;
     height: 100vh;
@@ -9,7 +14,7 @@
 header {
     width: 100%;
     height: 7vh;
-    background: rgb(221, 218, 50);
+    background: #ffdf6c;
     box-shadow: 0 0 3px 0 rgb(202, 202, 202);
 }
 
@@ -26,7 +31,7 @@ header {
 .sidebar {
     width: 300px;
     height: 100%;
-    background: rgb(22, 22, 22);
+    background: #202020;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -42,15 +47,18 @@ header {
     list-style: none;
 }
 
-.sidebar ul a {
+.sidebar ul li a {
     text-decoration: none;
-    color: rgb(241, 241, 188);
+    color: #fff;
     font-weight: bold;
     /* padding: 0.001em; */
     font-size: 0.9em;
+    display: block;
+    padding: 0em 1em;
+    position: relative;
 }
 
-.sidebar ul a li {
+.sidebar ul li {
     /* background-color: #f0f0f025; */
     padding: 0.8em 0.5em;
     margin-bottom: 0em;
@@ -63,11 +71,48 @@ header {
     /* border-bottom-color: rgb(221, 218, 50); */
 }
 
-.sidebar ul a li:hover {
-    border-left-color: rgb(221, 218, 50);
+.sidebar ul li:hover {
+    border-left-color: #ffdf6c;
     border-left-style: solid;
     transition: all 0.1s ease;
     background-color: rgb(46, 46, 46);
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+    /* width of the entire scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: transparent;
+    /* color of the tracking area */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #fb770d;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid transparent;
+    /* creates padding around scroll thumb */
+}
+
+.subMenu ul {
+    background-color: #707070;
+    margin-top: 1em;
+}
+
+.subMenu ul li:hover {
+    border-left-color: #707070 !important;
+    border-left-style: solid;
+    transition: all 0.1s ease;
+    /* background-color: #572a68 !important; */
+}
+
+.subMenu a img {
+    position: absolute;
+    right: 14px;
+    bottom: 2px;
 }
 
 .logo {
