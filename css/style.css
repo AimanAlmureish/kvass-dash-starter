@@ -289,3 +289,23 @@ button:hover {
     font-weight: bold;
     font-size: 2em;
 }
+
+
+/*  Long cards */
+
+.longCardDetails {
+    padding: 0em 2em;
+}
+
+.longCardDetails h1 {
+    color: #202020;
+    padding-bottom: 1em;
+}
+
+.longCardDetails p {
+    color: #707070;
+}
+
+.ops {
+    padding-top: 1em;
+}
