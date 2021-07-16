@@ -309,3 +309,78 @@ button:hover {
 .ops {
     padding-top: 1em;
 }
+
+.table {}
+
+table {
+    width: 100%;
+}
+
+table thead th {
+    background-color: #ffdf6c;
+}
+
+table {
+    /* background-color: #56aaad; */
+}
+
+table thead {
+    background-color: #bb377d;
+}
+
+table thead th {
+    background-color: #ceb457 !important;
+    color: #fff;
+    border-radius: 0 !important;
+}
+
+table thead tr {
+    padding: 0;
+    padding-top: 0.5em;
+    background-color: #ceb457 !important;
+}
+
+table tbody {}
+
+table tbody tr {
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 0 1px 0 rgb(148, 148, 148);
+    margin-bottom: 0.3em;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #ceb45756;
+}
+
+table tbody tr td {
+    margin-right: 0em;
+    border-radius: 0;
+    margin-bottom: 0em;
+    background-color: transparent;
+    color: #707070;
+}
+
+
+/* table tbody tr td:nth-child(1) {
+    background-color: #8f729c;
+    border-radius: 0;
+    color: #fff;
+} */
+
+table thead tr {}
+
+table thead tr th {}
+
+td,
+th {
+    /* display: inline-block; */
+    /* margin: 0 0.5rem 0.5rem 0; */
+    padding: 0.5rem;
+    /* text-align: left; */
+    background-color: white;
+    /* border: 1px solid transparentize( #58C25F, 0.5); */
+    border-radius: 5px;
+    /* width: 100%; */
+    border: none !important;
+}
