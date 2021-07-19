@@ -2,3 +2,43 @@ body {
     font-family: sans-serif;
     scroll-behavior: smooth;
 }
+
+@media (max-width: 1300px) {
+    .longCardDetails {
+        padding: 0em 0em;
+    }
+    .singleLongCard {
+        flex-direction: column;
+    }
+    .singleLongCard img {
+        padding-bottom: 2em;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 1024px) {
+    .wholeCards {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        visibility: visible !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        visibility: hidden;
+    }
+    .menu__btn {
+        visibility: visible;
+    }
+    .content {
+        margin-left: 0px;
+    }
+    header {
+        position: fixed;
+    }
+}
