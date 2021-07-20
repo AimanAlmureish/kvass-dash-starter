@@ -26,6 +26,8 @@ header {
   -webkit-user-select: none;
   user-select: none; */
     padding: 0em 3em;
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -148,7 +150,7 @@ header {
     /* display: none; */
     visibility: visible;
     transition-duration: 0.25s;
-    z-index: 1;
+    z-index: 2;
 }
 
 .sidebar ul {
@@ -235,7 +237,7 @@ header {
 section {
     background-color: #fff;
     padding: 2em;
-    box-shadow: 0 0 3px 0 rgb(202, 202, 202);
+    /* box-shadow: 0 0 3px 0 rgb(202, 202, 202); */
     border-radius: 5px;
     margin-bottom: 2em;
 }

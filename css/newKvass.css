@@ -42,3 +42,18 @@ body {
         position: fixed;
     }
 }
+
+@media (max-width: 600px) {
+    .content {
+        padding: 5em 1em;
+    }
+    section {
+        padding: 2em 0.5em;
+    }
+}
+
+@media (max-width: 320px) {
+    .sidebar {
+        width: 258px;
+    }
+}

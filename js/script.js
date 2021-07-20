@@ -21,7 +21,11 @@ const burger = document
             sidebar.style.left = "0";
             sidebar.style.transitionDuration = "0.25s";
             sidebar.style.visibility = "visible";
-            document.querySelector(".menu__btn").style.left = "315px";
+            if (window.innerWidth <= 320) {
+                document.querySelector(".menu__btn").style.left = "275px";
+            } else {
+                document.querySelector(".menu__btn").style.left = "315px";
+            }
         } else {
             console.log(true);
             if (window.innerWidth > 768) {
@@ -46,6 +50,8 @@ window.addEventListener("resize", () => {
 
         console.log("hello");
     } else {
+        checkbox.checked = false;
+        document.querySelector(".menu__btn").style.left = "20px";
         sidebar.style.visibility = "hidden";
         sidebar.style.left = "-100%";
     }
